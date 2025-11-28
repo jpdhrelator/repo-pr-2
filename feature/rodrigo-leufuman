@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        <div class="tarjeta">
+    <h2>Mi Tarjeta</h2>
+    <p>Esta es mi tarjeta.</p>
+    <button>Ver más</button>
+</div>
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="                  
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="                    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Aquí es donde se insertará la tarjeta -->
+        <div id="tarjeta-container"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Sitio Web</p>
+    </footer>
+    <script src="script.js"></script>
+    .tarjeta {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h2 {
+    color: #333;
+}
+
+.tarjeta p {
+    color: #666;
+}
+
+.tarjeta button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tarjeta button:hover {
+    background-color: #3e8e41;
+}
+</body>
+</html>
+fetch('tarjeta.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('tarjeta-container').innerHTML = data;
+    })
+    .catch(error => console.error(error));
